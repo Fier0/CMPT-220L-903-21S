@@ -29,11 +29,21 @@ public class Main {
 
     public static void main(String[] args) {
         //	Replace this with your dry inventory function!
-        wet_inventory();
+        dry_inventory();
+
     }
 
     static void dry_inventory() {
-        // Your DRY Solution goes here!
+        purchase(1,4,4);
+        System.out.println(lemonades_available);
+    }
+
+    // function that handles purchases
+    static void purchase(int lem, int pretz, double tip){
+        lemonades_available -= lem;
+        pretzels_available -= pretz,
+        tips += tip;
+        cash += (lem*8)+(pretz*2);
     }
 
     static void wet_inventory() {
