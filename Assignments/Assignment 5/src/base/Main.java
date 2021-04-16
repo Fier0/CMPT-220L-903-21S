@@ -29,21 +29,49 @@ public class Main {
 
     public static void main(String[] args) {
         //	Replace this with your dry inventory function!
+        System.out.println("Lemonades to start: "+ lemonades_available);
+        System.out.println("pretzels to start: "+ pretzels_available);
+        System.out.println("Cash to start: " + cash);
         dry_inventory();
-
+        System.out.println("-----------Results for the hour:-----------");
+        System.out.println("Lemonades left: " + lemonades_available);
+        System.out.println("Pretzels left: " + pretzels_available);
+        System.out.println("total Cash: " + cash);
+        System.out.println("total Tips: " + tips);
     }
 
     static void dry_inventory() {
-        purchase(1,4,4);
-        System.out.println(lemonades_available);
+        purchase(1,4,4.0);//1
+        purchase(3,2,0.0);//2
+        purchase(0,3,0.0);//3
+        purchase(2,1,0.0);//4
+        purchase(6,0,10.0);//5
+        purchase(4,0,5.0);//6
+        purchase(0,2,0.0);//7
+        purchase(8,10,10.0);//8
+        purchase(0,6,0.0);//9
+        purchase(1,0,0.0);//10
+        purchase(0,1,0.0);//11
+        purchase(7,0,4.0);//12
+        purchase(0,2,0.0);//13
+        purchase(3,6,0.0);//14
+        purchase(2,9,3.0);//15
     }
 
     // function that handles purchases
     static void purchase(int lem, int pretz, double tip){
         lemonades_available -= lem;
-        pretzels_available -= pretz,
+        pretzels_available -= pretz;
         tips += tip;
         cash += (lem*8)+(pretz*2);
+        System.out.println("-------------------------------------------");
+        System.out.println("Lemonades purchased: "+ lem);
+        System.out.println("pretzels purchased: "+ pretz);
+        System.out.println("tip: " + tip);
+        System.out.println("Lemonades remaining: "+ lemonades_available);
+        System.out.println("pretzels remaining: "+ pretzels_available);
+        System.out.println("total cash: " + cash);
+        System.out.println("Total Tips: "+ tips);
     }
 
     static void wet_inventory() {
