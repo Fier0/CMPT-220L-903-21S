@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Assignments/Assignment 6/assgn6/src",
         "Assignments/Assignment 4/assgn4/src",
-        "Assignments/Assignment 6/assgn6/src"
+        "Assignments/Assignment 7/src"
     ],
     "java.dependency.syncWithFolderExplorer": false,
     "java.dependency.packagePresentation": "hierarchical"
