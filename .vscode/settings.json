@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "JupyterNotebooks/Labs/Lab 6/Lab 6/src",
         "Assignments/Assignment 6/assgn6/src",
         "Assignments/Assignment 4/assgn4/src",
-        "JupyterNotebooks/Labs/Lab 6/Lab 6/src"
+        "JupyterNotebooks/Labs/Lab 7/src"
     ],
     "java.dependency.syncWithFolderExplorer": false,
     "java.dependency.packagePresentation": "hierarchical"
